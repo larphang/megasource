@@ -173,7 +173,7 @@ if(SDL2_FOUND OR SDL_FOUND)
             # in the SDL2_LIBRARY string after the "-framework".
             # But if I quote the stuff in INCLUDE_DIRECTORIES, it doesn't work.
             file(WRITE ${PROJECT_BINARY_DIR}/CMakeTmp/CMakeLists.txt
-                "cmake_minimum_required(VERSION 2.8)
+                "cmake_minimum_required(VERSION 3.5)
                 project(DetermineSoundLibs C)
                 include_directories(${TMP_INCLUDE_DIRS})
                 add_executable(DetermineSoundLibs DetermineSoundLibs.c)
